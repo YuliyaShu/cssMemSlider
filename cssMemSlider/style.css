@@ -20,14 +20,14 @@ img {
 }
 
 p{
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-block-start: calc(0.625rem * 0);
+    margin-block-end: calc(0.625rem * 0);
   }
   
 .container {
-	max-width: 1230px;
-	margin: 0 auto;
-	padding: 0 5%;
+	  max-width: calc(0.625rem * 1230);
+	  margin: 0 auto;
+	  padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,10 +60,14 @@ p{
 
 .button:hover {
    background-color: rgb(6, 1, 11);
+   opacity: 40%;
+   
   }
 
 .button:active {
-    background-color: rgb(219, 230, 62);
+    border: 0.7rem solid rgb(236, 253, 5);
+    opacity: 40%;
+    touch-action: manipulation;
   }
 
 input[name="css"] {
@@ -76,6 +80,7 @@ input[name="css"] {
 
   #b1:checked ~ .buttons #button1 {
     background-color: rgb(143, 38, 61);
+    transition-duration: 1s;
   }
   
   #b2:checked ~ .slide2 {
@@ -109,6 +114,8 @@ input[name="css"] {
   #b5:checked ~ .buttons #button5 {
     background-color: rgb(143, 38, 61);
   } 
+
+
 
   .slide {
     width: 100%;
